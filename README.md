@@ -1,13 +1,13 @@
 --------------Observações Gerais--------------- <br>
-*Como não foi requisitado nos detalhes do desafio, O cliente não tem um login valido, e so pode abrir um chamado na tela principal.
+* Como não foi requisitado nos detalhes do desafio, O cliente não tem um login valido, e so pode abrir um chamado na tela principal.
 
-*Não foi requisitado um perfil administrador no sistema, mas preferi implementar por fazer mais sentido no geral.
+* Não foi requisitado um perfil administrador no sistema, mas preferi implementar por fazer mais sentido no geral.
 
-*Maior parte do sistema está funcinando de forma Assyncrona, usando Ajax, so a parte do administrador acompanhar os chamados que está sem ser assyncrono, pelo fato de não ter nenhum tipo de interação nessa tela.
+* Maior parte do sistema está funcinando de forma Assyncrona, usando Ajax, so a parte do administrador acompanhar os chamados que está sem ser assyncrono, pelo fato de não ter nenhum tipo de interação nessa tela.
 
-*Sistema ta responsivo para mobile.
+* Sistema ta responsivo para mobile.
 
-*Não fiz as mascaras dos inputs pra celular por que so lembrei agora e deu preguiça.
+* Não fiz as mascaras dos inputs pra celular por que so lembrei agora e deu preguiça.
 
 --Tecnologias e Bibliotecas usadas-
 Laravel 8 - Jquery - Bootstrap - Ajax - DataTables - SweetAlert2
@@ -20,30 +20,30 @@ Laravel 8 - Jquery - Bootstrap - Ajax - DataTables - SweetAlert2
 
 * O Administrador poderá adicionar Tanto novos administradores como Vendendor/Tecnico, Todas informações no registro de um funcionario são obrigatorias
 
-*O Administrador tem uma tela de funcionarios para poder editar ou desativar qualquer usuario. Detalhe, não é obrigatorio botar uma senha quando for editar um usuario, caso o administro altere alguma informação de um usuario, mas nao mudar a senha, a senha permanecera a mesma.
+* O Administrador tem uma tela de funcionarios para poder editar ou desativar qualquer usuario. Detalhe, não é obrigatorio botar uma senha quando for editar um usuario, caso o administro altere alguma informação de um usuario, mas nao mudar a senha, a senha permanecera a mesma.
 
-*O email é unico para os usuarios, sendo assim não se pode registrar um novo usuario ou editar um usuario para um email que já existe
+* O email é unico para os usuarios, sendo assim não se pode registrar um novo usuario ou editar um usuario para um email que já existe
 
-*O Administrador tem uma tela de chamados para acompanhar os chamados, essa tela so mostra os usuarios ativos.
+* O Administrador tem uma tela de chamados para acompanhar os chamados, essa tela so mostra os usuarios ativos.
 
-*O Adminstrador pode desativar um usuario, o unico impacto que tem é que o usuario não vai receber novas ocorrencias, porem ele ainda pode acessar os sistema.
+* O Adminstrador pode desativar um usuario, o unico impacto que tem é que o usuario não vai receber novas ocorrencias, porem ele ainda pode acessar os sistema.
 
-------Chamados-------
-*Os chamados são realizados na tela inicial no botão "Solicitar Suporte" não precisa estar logado para poder fazer um chamado, o nome e email não são obrigatorios, mas assunto e descrição sim.
+------Chamados------- <br>
+* Os chamados são realizados na tela inicial no botão "Solicitar Suporte" não precisa estar logado para poder fazer um chamado, o nome e email não são obrigatorios, mas assunto e descrição sim.
 
-*Adicionei os campos nome e email na abertura do chamado, porem eles não estão obrigatorios.
+* Adicionei os campos nome e email na abertura do chamado, porem eles não estão obrigatorios.
 
-*Se não tiver nenhum usuario cadastro ou ativo como Vendendor/Tecnico, vai retornar uma tela de error informando que não tem tecnicos disponiveis.
+* Se não tiver nenhum usuario cadastro ou ativo como Vendendor/Tecnico, vai retornar uma tela de error informando que não tem tecnicos disponiveis.
 
-*Se houver tecnico disponivel, o chamado irá pro usuario mais antigo com menos chamados, note que somente sera levado em conta chamados que não estão concluidos.
+* Se houver tecnico disponivel, o chamado irá pro usuario mais antigo com menos chamados, note que somente sera levado em conta chamados que não estão concluidos.
+ 
+* Chamados abertos vem com o status padrão "Em Aberto"
 
-*Chamados abertos vem com o status padrão "Em Aberto"
+* Quando um vendendor/tecnico estiver logado, ele so podera ter acesso a tela de chamados, assim que ele abrir um chamado, o chamado automaticamente ficará registrado como "Em andamento".
 
-*Quando um vendendor/tecnico estiver logado, ele so podera ter acesso a tela de chamados, assim que ele abrir um chamado, o chamado automaticamente ficará registrado como "Em andamento".
+* Se um chamado com o Status tanto como "Em Aberto" e "Em andamento" Passarem de 1 dia ficaram como "Em atraso", não tem um status especifico, por que iria ser necessario uma job rodando no banco para atualizar os status, então o sistema faz um validação(Se tiver Em aberto ou Em andamento e tiver mais de 1 dia nesse status, é considerado como atrasado).
 
-*Se um chamado com o Status tanto como "Em Aberto" e "Em andamento" Passarem de 1 dia ficaram como "Em atraso", não tem um status especifico, por que iria ser necessario uma job rodando no banco para atualizar os status, então o sistema faz um validação(Se tiver Em aberto ou Em andamento e tiver mais de 1 dia nesse status, é considerado como atrasado).
-
-*Chamado é concluido quando o vendendor/tecnico abre o chamado e clicka em Concluir Ocorrencia
+* Chamado é concluido quando o vendendor/tecnico abre o chamado e clicka em Concluir Ocorrencia
 
 
 
