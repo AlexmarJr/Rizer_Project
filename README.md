@@ -53,12 +53,12 @@ Laravel 8 - Jquery - Bootstrap - Ajax - DataTables - SweetAlert2
 * Instalar o Laravel
 * Instalar o NPM
 
-*No caso do xamp, acessar a pasta xamp/htdocs e jogar o projeto la.
-*Assim que fazer o donwload do projeto, procure uma pasta chamada .env.example, tire o example e deixe so o .env
-*Crie um banco de dados, no caso do xamp, abra o painel do xamp, inicie o apache e o mysql, no mysql click em admin, irá levar pro navegador
-*Na pasta .env em "DB_DATABASE" bote o nome do banco que voce criou
-*Abra o terminal e digite o codigo "composer install", esse codigo vai instalar as dependencias do laravel
-*Depois rode um "npm install", vai instalar as dependencias do node.js
+* No caso do xamp, acessar a pasta xamp/htdocs e jogar o projeto la.
+* Assim que fazer o donwload do projeto, procure uma pasta chamada .env.example, tire o example e deixe so o .env
+* Crie um banco de dados, no caso do xamp, abra o painel do xamp, inicie o apache e o mysql, no mysql click em admin, irá levar pro navegador
+* Na pasta .env em "DB_DATABASE" bote o nome do banco que voce criou
+* Abra o terminal e digite o codigo "composer install", esse codigo vai instalar as dependencias do laravel
+* Depois rode um "npm install", vai instalar as dependencias do node.js
 * Rode um npm "run dev", para compilar.
 * Depois rode um "php artisan migrate" para criar as tabelas no banco.
 *Acesso o sistema ou pelo xamp ou rode o codigo "php artisan serve", vai te da uma url para acessar o sistema, provavelmente sera http://127.0.0.1:8000/.
