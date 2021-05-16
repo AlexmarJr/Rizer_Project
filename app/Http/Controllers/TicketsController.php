@@ -30,7 +30,7 @@ class TicketsController extends Controller
         $luck_user = '';
         $luck_user_numbers = tickets::all()->count();;
         foreach($users as $user){
-            $open_tickets = tickets::where('id_seller', $user->id)->count();
+            $open_tickets = tickets::where('id_seller', $user->id)->where('status','!=', 3)->count();
 
             if($open_tickets <= $luck_user_numbers){
                 $luck_user = $user->id;

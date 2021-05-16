@@ -192,7 +192,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="ticket_infoLabel">Criar um Ocorrencia</h5>
+              <h5 class="modal-title" id="ticket_infoLabel">Ocorrencia</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -333,14 +333,14 @@
                 $("#name").css({'border-left':'6px solid green'});
             }
             if(email == ''){
-                $("#name").css({'border-left':'6px solid red'});
+                $("#email").css({'border-left':'6px solid red'});
                 return 0;
             }
             else{
                 $("#email").css({'border-left':'6px solid green'});
             }
             if(phone == ''){
-                $("#name").css({'border-left':'6px solid red'});
+                $("#phone").css({'border-left':'6px solid red'});
                 return 0;
             }
             else{

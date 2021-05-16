@@ -22,6 +22,10 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+            .text-sm{
+                font-size: 25px;
+                color: whitesmoke
+            }
         </style>
     </head>
     <body class="antialiased">
