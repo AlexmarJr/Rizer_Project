@@ -1,4 +1,4 @@
---------------Observações Gerais---------------
+--------------Observações Gerais--------------- <br>
 *Como não foi requisitado nos detalhes do desafio, O cliente não tem um login valido, e so pode abrir um chamado na tela principal.
 
 *Não foi requisitado um perfil administrador no sistema, mas preferi implementar por fazer mais sentido no geral.
